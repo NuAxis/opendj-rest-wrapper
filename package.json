@@ -1,0 +1,39 @@
+{
+  "name": "opendj-rest-wrapper",
+  "version": "1.0.0",
+  "description": "JavaScript library for OpenDJ REST API to access directory data as JSON resources over HTTP",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint lib/**/*.js spec/**/*.js",
+    "test": "npm run lint && npm run coverage && npm run check-coverage",
+    "coverage": "istanbul cover _mocha -R spec/*.js",
+    "check-coverage": "istanbul check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NuAxis/opendj-rest-wrapper.git"
+  },
+  "keywords": [
+    "ForgeRock",
+    "OpenDJ REST API"
+  ],
+  "author": "Irfan Naeem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NuAxis/opendj-rest-wrapper/issues"
+  },
+  "homepage": "https://github.com/NuAxis/opendj-rest-wrapper#readme",
+  "dependencies": {
+    "lodash.merge": "^4.6.0",
+    "request": "2.79.0"
+  },
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "eslint-config-google": "0.7.1",
+    "nock": "9.0.2",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^2.4.5"
+  }
+}
