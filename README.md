@@ -16,6 +16,18 @@ client.resetUserPassword(userName, data, callback),
 
 ```
 
-# Build
+# Configuration
+```Environment variables
+# OPENDJ REST API
+export OPENDJ_URL_BASE=(URL of the server including port, Must be HTTPS for password management)
+export OPENDJ_PATH_USERS=(Path of user management, Default '/users')
+export OPENDJ_PATH_PASSWORD=(Path of password management, Default '/users')
+export OPENDJ_USERNAME=(Admin username for basic auth)
+export OPENDJ_PASSWORD=(Admin user password for basic auth)
+export OPENDJ_CACERT=(Certificate if not using well-known CA, Must be specified for password management)
+
+```
+
+# Test
 
     npm test
